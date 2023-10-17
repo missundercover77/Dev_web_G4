@@ -1,0 +1,128 @@
+a{
+    text-decoration: none;
+    /*ajout*/
+    font-size: 12px;
+    font-weight: bold;
+    /*fin ajout*/
+}
+
+body{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav#menu, header, main, footer {
+    width: 1024px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+}
+
+nav#menu{
+    height: 80px;
+}
+
+
+nav#menu ul li  a{
+    color: rgb(44, 44, 44);
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*ajout*/
+nav#menu ul li a:hover, header a:hover{
+    border-bottom: 4px solid orangered;
+    /*fin ajout*/
+}
+
+header{
+    height: 300px;
+    /*ajout*/
+    background-image: url(../images/toronto.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*fin ajout*/
+}
+
+/*ajout*/
+header > *{
+    margin-left: 40px;
+    padding: 20px;
+    width: max-content;
+}
+header > h1{
+    background-color: rgba(255, 68, 0, 0.7);
+    color: rgb(230, 230, 230);
+    font-size: 20pt;
+}
+header > h2{
+    background-color: rgba(219, 219, 219, 0.7);
+    color: rgb(44, 44, 44);
+    font-size: 16pt;
+}
+header a{
+    color: rgb(230, 230, 230);
+    padding: 10px;
+}
+/*fin ajout*/
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    flex: 1;
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 150px;
+    background-color: black;
+}
+
+footer>nav{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer ul{
+    flex-direction: column;
+}
+
+footer ul li a{
+    height: 25px;
+}
+
+footer a{
+    color: white;
+}
