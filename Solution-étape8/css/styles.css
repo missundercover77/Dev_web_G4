@@ -122,6 +122,33 @@ section{
     align-self: flex-end;
 }
 
+article{
+    margin-bottom: 5px;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+}
+
+article#meme-stock figure{
+    margin:auto;
+    width: 500px;
+}
+
+article>h1{
+    font-size: 16pt;
+}
+
+article>p, figcaption{
+    font-size: 10pt;
+    text-align: justify;
+}
+
+article#nft img{
+    float: right;
+}
+
+article#crypto img{
+    float: left;
+}
 footer{
     display: flex;
     flex-direction: row;
