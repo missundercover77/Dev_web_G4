@@ -1,0 +1,73 @@
+
+.box{
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 3px;
+    background-color: rgba(255, 68, 0);
+    color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box > h1{
+    color: rgb(230, 230, 230);
+    font-size: 14pt;
+}
+
+.box > p{
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.box a{
+    color: rgb(44, 44, 44);
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+article{
+    margin-bottom: 5px;
+    border-bottom: 2px solid gainsboro; 
+    padding: 20px;
+    color: rgb(44, 44, 44);
+}
+
+article>h1{
+    font-size: 16pt;
+}
+
+article>p, figcaption{
+    font-size: 10pt;
+    text-align: justify;
+}
+article#nft img{
+    float: right;
+}
+article#crypto img{
+    float: left;
+}
+article#meme-stock figure{
+    margin: auto;
+    width: 500px;
+}
+
+/*fin ajout*/
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    /* ajout */
+    align-self: flex-start; /* <-- fix car dans un flexbox, sinon l'alignement  */
+    position: sticky;
+    top:80px;
+    background-color: white;
+    /* fin ajout */
+}
+
+section{
+    flex: 1;
+}
