@@ -97,13 +97,75 @@ aside{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    
     position: sticky;
     overflow:auto;
     top:100px;
     z-index: 0;
     height: 500px;
 
+}
+
+section{
+    flex: 1;
+}
+
+.box{
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+    margin: 20px;
+    background-color: rgba(255,68,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.box>h1{
+    color: white;
+    font-size: 14pt;
+}
+.box>p{
+    color: white;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.box a{
+    color: black;
+    font-size: 9pt;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+article{
+    margin-bottom: 5px;
+    border-bottom: 2px solid gainsboro;
+    padding: 20px;
+    color: reg(44,44,44);
+}
+
+article>h1{
+    font-size: 16pt;
+}
+
+article>p, figcaption{
+    font-size: 10pt;
+    text-align: justify;
+}
+
+article#nft img{
+    float:right;
+    width: 70px;
+}
+
+article#crypto img{
+    float:left;
+    width: 50px;
+}
+
+article#meme-stock figure{
+    margin:auto;
+    width: 500px;
 }
 
 footer{
